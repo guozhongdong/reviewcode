@@ -10,7 +10,7 @@ import java.util.concurrent.CyclicBarrier;
 public class CyclicBarrierTest {
     static CyclicBarrier c = new CyclicBarrier(3);
     public static void main(String[] args){
-        new Thread(() ->{
+        /*new Thread(() ->{
             try {
                 c.await();
             } catch (InterruptedException e) {
@@ -28,7 +28,7 @@ public class CyclicBarrierTest {
         } catch (BrokenBarrierException e) {
             e.printStackTrace();
         }
-        System.out.println(2);
+        System.out.println(2);*/
     }
 
 }

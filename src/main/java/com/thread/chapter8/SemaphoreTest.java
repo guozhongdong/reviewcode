@@ -20,7 +20,7 @@ public class SemaphoreTest {
             threadpool.execute(() ->{
                 try {
                     s.acquire();
-                    System.out.println("save data");
+                    System.out.println("save data" +s.availablePermits()+" ");
                     s.release();
                 } catch (InterruptedException e) {
                     e.printStackTrace();

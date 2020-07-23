@@ -24,5 +24,18 @@ public class Java8BiFunction1 {
         BiFunction<Integer,Integer, List<Integer>> bi2 = (v1, v2) -> Arrays.asList(v1+v2);
         List<Integer> obj3 = bi2.apply(2,4);
         System.out.println(obj3);
+
+        Java8BiFunction1 obj1 = new Java8BiFunction1();
+
+        Double d = getMap(2,5,obj1::getValue);
+        System.out.println(d);
+    }
+
+    public static <T,V,R> R getMap(T a,V b,BiFunction<T,V,R> func1){
+        return func1.apply(a,b);
+    }
+    public Double getValue(Integer a,Integer b){
+
+        return Double.valueOf(a*b);
     }
 }

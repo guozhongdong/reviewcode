@@ -60,7 +60,7 @@ public class Rehash {
                 Thread.sleep(1000);
             System.out.println(testCache.get("key3"));
                 Thread.sleep(1000);
-            testCache.refresh();
+            //testCache.refresh();
 
             List<String> list = new ArrayList<>();
             list.add("mnkl");
